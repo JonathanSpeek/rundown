@@ -1,5 +1,6 @@
 class RunsController < ApplicationController
   before_action :find_run, only: [:show, :edit, :update, :destroy]
+
   def index
     @runs = Run.all.order('created_at DESC')
   end
@@ -21,15 +22,19 @@ class RunsController < ApplicationController
   end
 
   def edit
-
   end
 
   def update
-
+    if @run.update(run_params)
+      redirect_to @run
+    else
+      render 'edit'
+    end
   end
 
   def destroy
-
+    @run.destroy
+    redirect_to root_path
   end
 
   private

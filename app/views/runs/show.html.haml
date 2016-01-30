@@ -4,3 +4,8 @@
   %p= @run.pace
   %p= @run.mood
 
+= link_to 'Back', root_path
+|
+= link_to 'Edit', edit_run_path(@run)
+|
+= link_to 'Delete', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }

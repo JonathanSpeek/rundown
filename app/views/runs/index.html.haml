@@ -1,3 +1,6 @@
-- @runs.each do |run|
-  %h2= link_to run.date.strftime("%A %B %d"), run
-  %h3= run.distance
+#index_runs
+  - @runs.each do |run|
+    %h2= link_to run.date.strftime("%A %B %d"), run
+    %h3
+      %span Distance:
+      =run.distance

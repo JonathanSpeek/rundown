@@ -1,1 +1,3 @@
-%h1 This is the Runs#Index Placeholder
+- @runs.each do |run|
+  %h2= link_to run.date, run
+  %h3= run.distance

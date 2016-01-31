@@ -16,7 +16,6 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome";
 
 html {
   height: 100%;
@@ -76,6 +75,15 @@ h1 {
       border-top: 1px solid #EAEAEA;
       padding: 15px;
       margin: 0;
+    }
+  }
+}
+
+#edit_page {
+  .current_image {
+    img {
+      display: block;
+      margin: 20px 0;
     }
   }
 }

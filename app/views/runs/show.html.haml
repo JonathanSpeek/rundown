@@ -1,4 +1,5 @@
 #run
+  = image_tag @run.image.url(:medium)
   %h2 Date: #{@run.date.strftime("%A %B %d")}
   %h2 Distance: #{@run.distance}
   %h2 Pace: #{@run.pace}

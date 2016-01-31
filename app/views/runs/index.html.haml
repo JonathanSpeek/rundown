@@ -1,6 +1,7 @@
 #index_runs
   %h1 My RunDown
   - @runs.each do |run|
+    = link_to (image_tag run.image.url(:medium)), run
     %h2= link_to run.date.strftime("%A %B %d"), run
     %h3
       %span Distance:

@@ -40,7 +40,7 @@ class RunsController < ApplicationController
   private
 
   def run_params
-    params.require(:run).permit(:date, :distance, :pace, :mood)
+    params.require(:run).permit(:date, :distance, :pace, :mood, :image)
   end
 
   def find_run

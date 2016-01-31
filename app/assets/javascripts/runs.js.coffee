@@ -7,3 +7,10 @@ jQuery ->
     $('#index_runs').masonry
       itemSelector: '.box'
       isFitWidth: true
+
+$ ->
+  flashCallback = ->
+    $(".alert").fadeOut()
+  $(".alert").bind 'click', (ev) =>
+    $(".alert").fadeOut()
+  setTimeout flashCallback, 2000

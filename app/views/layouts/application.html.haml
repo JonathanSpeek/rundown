@@ -15,4 +15,5 @@
         = link_to 'Run', new_run_path, class: 'btn btn-primary glyphicon glyphicon-plus'
         = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'btn btn-primary glyphicon glyphicon-user'
   .container
+    = render 'layouts/messages'
     = yield

@@ -16,3 +16,5 @@
 //= require masonry/jquery.masonry
 //= require turbolinks
 //= require_tree .
+
+$(".alert" ).fadeOut(3000);

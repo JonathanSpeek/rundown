@@ -1,11 +1,9 @@
 #run
-  %p= @run.date
-  %p= @run.distance
-  %p= @run.pace
-  %p= @run.mood
+  %h2= @run.date.strftime("%A %B %d")
+  %h2= @run.distance
+  %h2= @run.pace
+  %h2= @run.mood
 
-= link_to 'Back', root_path
-|
-= link_to 'Edit', edit_run_path(@run)
-|
-= link_to 'Delete', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }
+= link_to 'Back', root_path, class: 'btn btn-primary glyphicon glyphicon-chevron-left'
+= link_to 'Edit', edit_run_path(@run), class: 'btn btn-primary glyphicon glyphicon-pencil'
+= link_to 'Delete', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary glyphicon glyphicon-trash'

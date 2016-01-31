@@ -1,4 +1,5 @@
 #index_runs
+  %h1 My RunDown
   - @runs.each do |run|
     %h2= link_to run.date.strftime("%A %B %d"), run
     %h3

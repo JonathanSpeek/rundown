@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$ ->
+jQuery ->
   $('#index_runs').imagesLoaded ->
     $('#index_runs').masonry
       itemSelector: '.box'

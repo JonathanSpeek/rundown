@@ -3,11 +3,15 @@
     .panel.panel-default
       .panel-heading.run_image
         = image_tag @run.image.url
-      .panel-body
-        %h2 Date: #{@run.date.strftime("%A %B %d")}
-        %h2 Distance: #{@run.distance}
-        %h2 Pace: #{@run.pace}
-        %h2 Mood: #{@run.mood}
+      .list-group
+        .list-group-item
+          %h2 Date: #{@run.date.strftime("%A %B %d")}
+        .list-group-item
+          %h2 Distance: #{@run.distance}
+        .list-group-item
+          %h2 Pace: #{@run.pace}
+        .list-group-item
+          %h2 Mood: #{@run.mood}
       .panel-footer
         .row
           = link_to 'Back', root_path, class: 'btn btn-primary glyphicon glyphicon-chevron-left'

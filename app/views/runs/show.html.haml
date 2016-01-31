@@ -1,8 +1,8 @@
 #run
-  %h2= @run.date.strftime("%A %B %d")
-  %h2= @run.distance
-  %h2= @run.pace
-  %h2= @run.mood
+  %h2 Date: #{@run.date.strftime("%A %B %d")}
+  %h2 Distance: #{@run.distance}
+  %h2 Pace: #{@run.pace}
+  %h2 Mood: #{@run.mood}
 
 = link_to 'Back', root_path, class: 'btn btn-primary glyphicon glyphicon-chevron-left'
 = link_to 'Edit', edit_run_path(@run), class: 'btn btn-primary glyphicon glyphicon-pencil'

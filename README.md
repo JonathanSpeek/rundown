@@ -6,6 +6,7 @@
 
 * Devise for Authentication
 * Paperclip for Image Upload
+* AWS S3 for asset storage
 * Masonry for responsive image layout
 * Bootstrap for styling
 * CRUD
@@ -14,7 +15,6 @@
 ### Future Features:
 
 * More styling
-* Ability to add more photos of runs
 * Geotagging
 * Twitter and Instagram integration
 * OAuth

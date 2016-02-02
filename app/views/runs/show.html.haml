@@ -14,7 +14,10 @@
           %h2 Mood: #{@run.mood}
       .panel-footer
         .row
-          = link_to 'tweet', "http://twitter.com/home?status=#{@run.distance + ' run and felt ' + @run.mood.downcase}", class: 'btn btn-primary glyphicon glyphicon-heart'
+          = link_to 'Tweet', "http://twitter.com/home?status=#{@run.distance + ' run and felt ' + @run.mood.downcase}", class: 'btn btn-primary glyphicon glyphicon-heart'
+          = link_to 'Pin It', "https://pinterest.com/pin/create/button/?url=#{image_url(@run)}&media=&description=#{@run.distance + ' run and felt ' + @run.mood.downcase}", class: 'btn btn-primary glyphicon glyphicon-pushpin'
           = link_to 'Back', root_path, class: 'btn btn-primary glyphicon glyphicon-chevron-left'
           = link_to 'Edit', edit_run_path(@run), class: 'btn btn-primary glyphicon glyphicon-pencil'
           = link_to 'Delete', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary glyphicon glyphicon-trash'
+
+

@@ -5,4 +5,5 @@
   = f.input :mood, label: 'How did you feel?', input_html: { class: 'form-control' }
   = f.input :image, label: 'Add a picture!', input_html: { class: 'form-control' }
   %br/
-  = f.button :submit
+  = link_to '', root_path, class: 'btn btn-circle btn-color3 glyphicon glyphicon-chevron-left'
+  = f.button :submit, '', class: 'btn btn-circle btn-color1 glyphicon glyphicon-chevron-left'

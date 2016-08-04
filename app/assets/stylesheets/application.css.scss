@@ -21,39 +21,39 @@ html {
 }
 
 body {
-  background: white;
+  background: white !important;
 }
 h1 {
-  color: white;
-  font-family: megrim, fantasy;
+  color: white !important;
+  font-family: megrim, fantasy !important;
 }
 h2, h3, h4, h5, h6, p {
-  font-family: megrim, fantasy;
+  font-family: megrim, fantasy !important;
 }
 
 .btn-circle {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.428571429;
-  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center !important;
+  padding: 6px 0 !important;
+  font-size: 12px !important;
+  line-height: 1.428571429 !important;
+  border-radius: 50% !important;
 }
 
 .btn-color1 {
-  background: #47b8e0;
-  color: white;
+  background: #47b8e0 !important;
+  color: white !important;
 }
 
 .btn-color2 {
-  background: #ff7473;
-  color: white;
+  background: #ff7473 !important;
+  color: white !important;
 }
 
 .btn-color3 {
-  background: #34314c;
-  color: white;
+  background: #34314c !important;
+  color: white !important;
 }
 
 .navbar-default {
@@ -63,7 +63,7 @@ h2, h3, h4, h5, h6, p {
   border: none;
   border-radius: 0;
     .navbar-brand {
-      color: #34314c;
+      color: #34314c !important;
       font-size: 2em;
       text-transform: uppercase;
       font-weight: 700;

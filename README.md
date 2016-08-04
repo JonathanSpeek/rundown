@@ -18,6 +18,8 @@
 * Geotagging
 * Twitter and Instagram integration
 * OAuth
+* Fully Responsive
+* Custom UI
 
 
 

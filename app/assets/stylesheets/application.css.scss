@@ -31,6 +31,31 @@ h2, h3, h4, h5, h6, p {
   font-family: megrim, fantasy;
 }
 
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 50%;
+}
+
+.btn-color1 {
+  background: #47b8e0;
+  color: white;
+}
+
+.btn-color2 {
+  background: #ff7473;
+  color: white;
+}
+
+.btn-color3 {
+  background: #34314c;
+  color: white;
+}
+
 .navbar-default {
   background: rgba(250, 250, 250, 0.5);
   -webkit-box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
@@ -38,7 +63,7 @@ h2, h3, h4, h5, h6, p {
   border: none;
   border-radius: 0;
     .navbar-brand {
-      color: 0a0a0a;
+      color: #34314c;
       font-size: 2em;
       text-transform: uppercase;
       font-weight: 700;

@@ -14,7 +14,8 @@
           %h2 Mood: #{@run.mood}
       .panel-footer
         .row
-          = link_to 'Tweet', "http://twitter.com/home?status=I ran #{@run.distance + ' and felt ' + @run.mood.downcase} %23rundown", class: 'btn btn-primary glyphicon glyphicon-heart'
-          = link_to 'Back', root_path, class: 'btn btn-primary glyphicon glyphicon-chevron-left'
-          = link_to 'Edit', edit_run_path(@run), class: 'btn btn-primary glyphicon glyphicon-pencil'
-          = link_to 'Delete', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary glyphicon glyphicon-trash'
+          = link_to '', root_path, class: 'btn btn-circle btn-color3 glyphicon glyphicon-chevron-left'
+          = link_to '', edit_run_path(@run), class: 'btn btn-circle btn-color3 glyphicon glyphicon-pencil'
+          = link_to '', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-circle btn-color3 glyphicon glyphicon-trash'
+          .pull-right
+            = link_to '', "http://twitter.com/home?status=I ran #{@run.distance + ' and felt ' + @run.mood.downcase} %23rundown", class: 'btn btn-color2 btn-circle glyphicon glyphicon-heart'

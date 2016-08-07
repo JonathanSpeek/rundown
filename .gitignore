@@ -15,3 +15,12 @@
 /log/*
 !/log/.keep
 /tmp
+
+
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+dump.rdb
+.env

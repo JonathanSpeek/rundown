@@ -20,9 +20,14 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "omniauth-google-oauth2", "~> 0.2.1"
 
+
+
 group :development, :test do
   gem 'byebug'
   gem 'sqlite3'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'guard-rubocop'
 end
 
 group :development do

@@ -18,4 +18,4 @@
           = link_to '', edit_run_path(@run), class: 'btn btn-circle btn-color3 glyphicon glyphicon-pencil'
           = link_to '', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-circle btn-color3 glyphicon glyphicon-trash'
           .pull-right
-            = link_to '', "http://twitter.com/home?status=I ran #{@run.distance + ' and felt ' + @run.mood.downcase} %23rundown", class: 'btn btn-color2 btn-circle glyphicon glyphicon-heart'
+            = link_to '', "http://twitter.com/home?status=I ran #{@run.distance + ' and felt ' + @run.mood.downcase} %23rundown", class: 'btn btn-color1 btn-circle glyphicon glyphicon-share-alt'

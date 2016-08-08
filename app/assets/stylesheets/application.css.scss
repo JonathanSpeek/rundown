@@ -31,6 +31,23 @@ h2, h3, h4, h5, h6, p {
   font-family: megrim, fantasy !important;
 }
 
+#page_title {
+  color: #0a0a0a !important;
+  font-family: megrim, fantasy !important;
+}
+
+.header-image {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    background: url('bg01.jpg') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .btn-circle {
   width: 30px !important;
   height: 30px !important;

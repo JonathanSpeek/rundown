@@ -37,7 +37,7 @@ h2, h3, h4, h5, h6, p {
 }
 
 .font_fix {
-  color: #0a0a0a !important; 
+  color: #0a0a0a !important;
 }
 
 .header-image {
@@ -51,7 +51,9 @@ h2, h3, h4, h5, h6, p {
     background-size: cover;
     -o-background-size: cover;
 }
-
+.nav.navbar-nav.navbar-right {
+  padding-top: .5em;
+}
 .btn-circle {
   width: 30px !important;
   height: 30px !important;

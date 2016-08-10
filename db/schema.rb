@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20160131082426) do
     t.string   "distance"
     t.string   "pace"
     t.string   "mood"
+    t.integer  "user_id"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.string   "image_file_name"

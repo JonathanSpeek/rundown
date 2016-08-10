@@ -5,8 +5,7 @@ class CreateRuns < ActiveRecord::Migration
       t.string :distance
       t.string :pace
       t.string :mood
-      t.integer :user_id
-      
+
       t.timestamps null: false
     end
   end

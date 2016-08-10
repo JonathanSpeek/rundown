@@ -14,12 +14,7 @@
 
 ### Future Features:
 
-* More styling
 * Geotagging
 * Twitter and Instagram integration
-* OAuth
 * Fully Responsive
 * Custom UI
-
-
-

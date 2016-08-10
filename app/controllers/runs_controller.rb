@@ -14,8 +14,8 @@ end
   end
 
   def create
-    @run = Run.new(run_params)
     @run.user_id = current_user.id
+    @run = Run.new(run_params)
     if @run.save
       redirect_to @run
     else

@@ -2,9 +2,10 @@ class RunsController < ApplicationController
   before_action :find_run, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
   def index
-    @runs = Run.all.order('created_at DESC')
+    if current_user
+    @runs = current_user.runs
   end
-
+end
   def show
   end
 
@@ -14,6 +15,7 @@ class RunsController < ApplicationController
 
   def create
     @run = Run.new(run_params)
+    @run.user_id = current_user.id
     if @run.save
       redirect_to @run
     else

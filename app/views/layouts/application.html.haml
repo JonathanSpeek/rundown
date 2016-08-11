@@ -18,3 +18,9 @@
   .container
     = render 'layouts/messages'
     = yield
+
+    #footer{:align => "center"}
+      .container
+        %p.text-muted.credit
+          RunDown was created by
+          %a{:href => "http://jspeek.me"} Jonathan Speek

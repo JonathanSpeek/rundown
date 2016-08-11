@@ -10,11 +10,11 @@
   %nav.navbar.navbar-default
     .container
       .navbar-header
-      = link_to 'RunDown', root_path, class: 'navbar-brand'
+      = link_to 'RunDown', root_path, title: 'Home', class: 'navbar-brand'
         - if current_user
         .nav.navbar-nav.navbar-right
-          = link_to '', new_run_path, class: 'btn btn-circle btn-color1 glyphicon glyphicon-plus'
-          = link_to '', destroy_user_session_path, method: :delete, class: 'btn btn-circle btn-color3 glyphicon glyphicon-log-out'
+          = link_to '', new_run_path, title: 'Add a Run', class: 'btn btn-circle btn-color1 glyphicon glyphicon-plus'
+          = link_to '', destroy_user_session_path, method: :delete, title: 'Logout', class: 'btn btn-circle btn-color3 glyphicon glyphicon-log-out'
   .container
     = render 'layouts/messages'
     = yield

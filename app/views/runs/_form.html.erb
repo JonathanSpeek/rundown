@@ -1,5 +1,6 @@
 <%= simple_form_for(@run, html: { class: 'form-horizontal' }) do |f| %>
   <%= f.input :date, label: 'Date' %>
+  <%= f.input :location, label: "Where'd you run?", input_html: { class: 'form-control' } %>
   <%= f.input :distance, label: 'How far did you run?', input_html: { class: 'form-control' } %>
   <%= f.input :pace, label: 'What was your pace?', input_html: { class: 'form-control' } %>
   <%= f.input :mood, label: 'How did you feel?', input_html: { class: 'form-control' } %>

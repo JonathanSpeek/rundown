@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html></html>
+<head>
+    <title>RunDown</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="bodyDiv">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header"></div>
+            <%= link_to 'RunDown', root_path, title: 'Home', class: 'navbar-brand' %>
+            <% if current_user %>
+            <div class="nav navbar-nav navbar-right">
+                <%= link_to '', new_run_path, title: 'Add a Run', class: 'btn btn-circle btn-color1 glyphicon glyphicon-plus' %>
+                <%= link_to '', destroy_user_session_path, method: :delete, title: 'Logout', class: 'btn btn-circle btn-color3 glyphicon glyphicon-log-out' %>
+            </div>
+            <% end %>
+        </div>
+    </nav>
+    <div class="container">
+        <%= render 'layouts/messages' %>
+        <%= yield %>
+    </div>
+  </div>
+  <div align="center" class="bottomNavbar navbar nav" id="footer">
+      <div class="container">
+          <p class="text-muted credit">
+              RunDown was created by
+              <a href="http://jspeek.me">Jonathan Speek</a>
+          </p>
+      </div>
+  </div>
+</body>

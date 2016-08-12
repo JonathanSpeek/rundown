@@ -1,10 +1,10 @@
-<%= simple_form_for(@run, html: { class: 'form-horizontal col-sm-6 col-lg-4' }) do |f| %>
+<%= simple_form_for(@run, html: { class: 'form-horizontal' }) do |f| %>
   <%= f.input :date, label: 'Date' %>
-  <%= f.input :location, label: "Where'd you run?", input_html: { class: 'form-control' } %>
-  <%= f.input :distance, label: 'How far did you run?', input_html: { class: 'form-control' } %>
-  <%= f.input :pace, label: 'What was your pace?', input_html: { class: 'form-control' } %>
-  <%= f.input :mood, label: 'How did you feel?', input_html: { class: 'form-control' } %>
-  <%= f.input :image, label: 'Add a picture!', input_html: { class: 'form-control' } %>
+  <%= f.input :location, label: "Where'd you run?", input_html: { class: 'form-control col-sm-6 col-lg-4' } %>
+  <%= f.input :distance, label: 'How far did you run?', input_html: { class: 'form-control col-sm-6 col-lg-4 col-sm-6 col-lg-4 col-sm-6 col-lg-4 col-sm-6 col-lg-4' } %>
+  <%= f.input :pace, label: 'What was your pace?', input_html: { class: 'form-control col-sm-6 col-lg-4 col-sm-6 col-lg-4 col-sm-6 col-lg-4' } %>
+  <%= f.input :mood, label: 'How did you feel?', input_html: { class: 'form-control col-sm-6 col-lg-4 col-sm-6 col-lg-4' } %>
+  <%= f.input :image, label: 'Add a picture!', input_html: { class: 'form-control col-sm-6 col-lg-4' } %>
   <br/>
   <%= link_to '', root_path, class: 'btn btn-circle btn-color3 glyphicon glyphicon-chevron-left', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Go Back' }  %>
   <%= f.button :button, '', class: 'btn btn-circle btn-color1 glyphicon glyphicon-ok', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Save the Run' }  %>

@@ -6,16 +6,16 @@
       </div>
       <div class="list-group">
         <div class="list-group-item">
-          <h2>Date: #{@run.date.strftime("%A %B %d")}</h2>
+          <h2><%= "Date: #{@run.date.strftime('%A %B %d')}" %></h2>
         </div>
         <div class="list-group-item">
-          <h2>Distance: #{@run.distance}</h2>
+          <h2><%= "Distance: #{@run.distance}" %></h2>
         </div>
         <div class="list-group-item">
-          <h2>Pace: #{@run.pace}</h2>
+          <h2><%= "Pace:  #{@run.pace}" %></h2>
         </div>
         <div class="list-group-item">
-          <h2>Mood: #{@run.mood}</h2>
+          <h2><%= "Mood: #{@run.mood}" %></h2>
         </div>
       </div>
       <div class="panel-footer">

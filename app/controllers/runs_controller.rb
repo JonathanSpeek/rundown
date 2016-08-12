@@ -42,7 +42,7 @@ end
   private
 
   def run_params
-    params.require(:run).permit(:date, :distance, :pace, :mood, :image)
+    params.require(:run).permit(:date, :location, :distance, :pace, :mood, :image)
   end
 
   def find_run

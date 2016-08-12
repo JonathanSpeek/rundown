@@ -1,9 +1,0 @@
-= simple_form_for(@run, html: { class: 'form-horizontal' }) do |f|
-  = f.input :date, label: 'Date'
-  = f.input :distance, label: 'How far did you run?', input_html: { class: 'form-control' }
-  = f.input :pace, label: 'What was your pace?', input_html: { class: 'form-control' }
-  = f.input :mood, label: 'How did you feel?', input_html: { class: 'form-control' }
-  = f.input :image, label: 'Add a picture!', input_html: { class: 'form-control' }
-  %br/
-  = link_to '', root_path, title: 'Go Back', class: 'btn btn-circle btn-color3 glyphicon glyphicon-chevron-left'
-  = f.button :button, '', title: 'Save the Run', class: 'btn btn-circle btn-color1 glyphicon glyphicon-ok'

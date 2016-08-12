@@ -1,0 +1,33 @@
+<div class="row" id="run_show">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-default">
+      <div class="panel-heading run_image">
+        <%= image_tag @run.image.url %>
+      </div>
+      <div class="list-group">
+        <div class="list-group-item">
+          <h2>Date: #{@run.date.strftime("%A %B %d")}</h2>
+        </div>
+        <div class="list-group-item">
+          <h2>Distance: #{@run.distance}</h2>
+        </div>
+        <div class="list-group-item">
+          <h2>Pace: #{@run.pace}</h2>
+        </div>
+        <div class="list-group-item">
+          <h2>Mood: #{@run.mood}</h2>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+          <%= link_to '', root_path, class: 'btn btn-circle btn-color3 glyphicon glyphicon-chevron-left', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Go Back' }  %>
+          <%= link_to '', edit_run_path(@run), class: 'btn btn-circle btn-color3 glyphicon glyphicon-pencil', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Edit the Run' }  %>
+          <%= link_to '', run_path(@run), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-circle btn-color3 glyphicon glyphicon-trash', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Delete this Run' }  %>
+          <div class="pull-right">
+            <%= link_to '', "http://twitter.com/home?status=I ran #{@run.distance + ' and felt ' + @run.mood.downcase} %23rundown", class: 'btn btn-color1 btn-circle glyphicon glyphicon-thumbs-up', data: { toggle: 'tooltip', placement: 'bottom', original_title: 'Share your Run' }  %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

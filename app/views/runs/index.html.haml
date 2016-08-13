@@ -3,4 +3,5 @@
     .box.panel.panel-default
       = link_to (image_tag run.image.url), run
       .panel-body
-        %h2= link_to run.date.strftime("%A %B %d"), run
+        %h1= link_to run.location, run
+        %h4= link_to run.date.strftime("%B %d"), run

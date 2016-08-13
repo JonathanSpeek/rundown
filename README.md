@@ -11,6 +11,14 @@
 * Bootstrap for styling
 * CRUD
 
+### To-Do List:
+
+* Distance and Pace from drop-downs
+* Add a profile page
+* Add avg distance, avg pace, and a day streak counter to profile page
+* Add username to user via migration
+* Add user picture in upper-right navbar
+
 
 ### Future Features:
 

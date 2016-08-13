@@ -16,9 +16,9 @@ Rails.application.configure do
 
   config.action_mailer.default_url_options = { :host => 'run-down.herokuapp.com' }
 
-  ActionView::Template::Error: Missing host to link to! Please provide the :host parameter, set default_url_options[:host], or set :only_path to true
+Rails.application.routes.default_url_options[:host] = 'run-down.herokuapp.com'
 
-  config.action_mailer.delivery_method = :smtp
+config.action_mailer.delivery_method = :smtp
 config.action_mailer.perform_deliveries = true
 config.action_mailer.raise_delivery_errors = false
 config.action_mailer.default :charset => "utf-8"
@@ -33,7 +33,6 @@ user_name: ENV["GMAIL_USERNAME"],
 password: ENV["GMAIL_PASSWORD"]
 }
 
-Rails.application.routes.default_url_options[:host] = 'run-down.herokuapp.com'
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like

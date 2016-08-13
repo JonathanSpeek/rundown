@@ -32,6 +32,8 @@ enable_starttls_auto: true,
 user_name: ENV["GMAIL_USERNAME"],
 password: ENV["GMAIL_PASSWORD"]
 }
+
+Rails.application.routes.default_url_options[:host] = 'run-down.herokuapp.com'
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like

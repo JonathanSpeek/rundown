@@ -21,6 +21,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "omniauth-google-oauth2", "~> 0.2.1"
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 
 group :development, :test do
   gem 'byebug'

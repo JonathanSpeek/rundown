@@ -19,5 +19,4 @@ Devise.setup do |config|
   config.sign_out_via = :delete
   config.omniauth :facebook, "KEY", "SECRET"
   config.omniauth :twitter, "KEY", "SECRET"
-  config.omniauth :google, "KEY", "SECRET"
 end

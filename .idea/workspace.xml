@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f5ca7cd-4e55-4961-9574-7b1c1c61f7e6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
     </list>
     <ignored path="rundown.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,11 +41,20 @@
       <file leaf-file-name="_links.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+            <state relative-caret-position="240">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#751#757#0#HTML" expanded="true" />
+                <element signature="e#757#763#0#HTML" expanded="true" />
+                <element signature="e#763#769#0#HTML" expanded="true" />
+                <element signature="e#942#948#0#HTML" expanded="true" />
+                <element signature="e#948#954#0#HTML" expanded="true" />
+                <element signature="e#954#960#0#HTML" expanded="true" />
+                <element signature="e#1162#1168#0#HTML" expanded="true" />
+                <element signature="e#1168#1174#0#HTML" expanded="true" />
+                <element signature="e#1174#1180#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -356,12 +364,12 @@
       <workItem from="1471496525967" duration="1324000" />
       <workItem from="1471526002726" duration="1866000" />
       <workItem from="1471528161041" duration="209000" />
-      <workItem from="1471544368568" duration="296000" />
+      <workItem from="1471544368568" duration="521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8277000" />
+    <option name="totallyTimeSpent" value="8502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -435,6 +443,15 @@
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#751#757#0#HTML" expanded="true" />
+            <element signature="e#757#763#0#HTML" expanded="true" />
+            <element signature="e#763#769#0#HTML" expanded="true" />
+            <element signature="e#942#948#0#HTML" expanded="true" />
+            <element signature="e#948#954#0#HTML" expanded="true" />
+            <element signature="e#954#960#0#HTML" expanded="true" />
+            <element signature="e#1162#1168#0#HTML" expanded="true" />
+            <element signature="e#1168#1174#0#HTML" expanded="true" />
+            <element signature="e#1174#1180#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -771,11 +788,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#751#757#0#HTML" expanded="true" />
+            <element signature="e#757#763#0#HTML" expanded="true" />
+            <element signature="e#763#769#0#HTML" expanded="true" />
+            <element signature="e#942#948#0#HTML" expanded="true" />
+            <element signature="e#948#954#0#HTML" expanded="true" />
+            <element signature="e#954#960#0#HTML" expanded="true" />
+            <element signature="e#1162#1168#0#HTML" expanded="true" />
+            <element signature="e#1168#1174#0#HTML" expanded="true" />
+            <element signature="e#1174#1180#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

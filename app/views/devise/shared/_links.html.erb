@@ -1,9 +1,15 @@
 <br>
-<%- if devise_mapping.omniauthable? %>
-    <%- resource_class.omniauth_providers.each do |provider| %>
-        <%= link_to "#{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: 'btn btn-color1' %>
-    <% end -%>
-<% end -%>
+<div class="btn-group dropup">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Signup with an Account <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="https://run-down.herokuapp.com/users/auth/twitter"><i class="fa fa-twitter"></i> Twitter </a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="https://run-down.herokuapp.com/auth/facebook"><i class="fa fa-facebook"></i> Facebook </a></li>
+  </ul>
+</div>
+
 <br>
 <%- if controller_name != 'sessions' %>
   <%= link_to "Log in", new_session_path(resource_name), class: 'btn btn-color3' %><br />

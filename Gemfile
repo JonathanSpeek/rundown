@@ -22,6 +22,7 @@ gem "omniauth-google-oauth2", "~> 0.2.1"
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'font-awesome-sass'
 
 group :development, :test do
   gem 'byebug'

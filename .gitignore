@@ -26,3 +26,5 @@ dump.rdb
 .env
 Procfile
 .idea/
+
+/config/initializers/devise.rb

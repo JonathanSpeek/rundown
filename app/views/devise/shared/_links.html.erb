@@ -1,6 +1,6 @@
 <br>
 <div class="btn-group dropup">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button type="button" class="btn btn-color1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Signup with an Account <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
@@ -16,7 +16,7 @@
 <% end -%>
 <br>
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
-  <%= link_to "Sign up", new_registration_path(resource_name), class: 'btn btn-color3' %><br />
+  <%= link_to "Sign up", new_registration_path(resource_name), class: 'font_fix' %><br />
 <% end -%>
 <br>
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>

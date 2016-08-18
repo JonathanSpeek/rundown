@@ -17,6 +17,6 @@ Devise.setup do |config|
   config.maximum_attempts = 8
   config.reset_password_within = 6.hours
   config.sign_out_via = :delete
-  config.omniauth :facebook, "FaceBook_Key", "FaceBook_Secret"
-  config.omniauth :twitter, "Twitter_Key", "Twitter_Secret"
+  config.omniauth :facebook, ENV['FaceBook_Key'], ENV['FaceBook_Secret']
+  config.omniauth :twitter, ENV['Twitter_Key'], ENV['Twitter_Secret']
 end

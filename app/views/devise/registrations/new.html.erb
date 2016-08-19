@@ -23,11 +23,13 @@
                   <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
                   <%= f.input :password_confirmation, required: true %>
                 </div>
+                <div class="col-md-2 col-xs-2"></div>
                 <div class="form-actions">
-                  <%= f.button :submit, "Sign up", class: 'btn btn-color3' %>
+                  <%= f.button :submit, "Sign up", class: 'btn btn-color3 col-md-8 col-xs-8' %>
                   <br>
                   <br>
                 </div>
+                <div class="col-md-2 col-xs-2"></div>
             <% end %>
           </div>
         </div>

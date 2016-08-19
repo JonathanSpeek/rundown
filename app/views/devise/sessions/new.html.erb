@@ -22,8 +22,10 @@
                   <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
                 </div>
                 <br>
+                <div class="col-md-2 col-xs-2"></div>
                 <div class="form-actions">
-                  <%= f.button :submit, "Log in", class: 'btn btn-color1' %>
+                  <%= f.button :submit, "Log in", class: 'btn btn-color1 col-md-8 col-xs-8' %>
+                  <br>
                   <br>
                   <br>
                   <div class="btn-group dropdown">
@@ -43,6 +45,7 @@
                   <% end -%>
                   <br>
                 </div>
+                <div class="col-md-2 col-xs-2"></div>
                 </div>
             <% end %>
             <div class="col-md-4"></div>

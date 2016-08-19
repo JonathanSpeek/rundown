@@ -1,32 +1,39 @@
 <!-- Full Width Image Header -->
 <header class="header-image">
-    <div class="headline">
-        <div class="container">
-            <h1 id="page_title">Sign Up</h1>
+  <div class="headline">
+    <div class="container-fluid">
+      <h1 id="page_title">Rundown</h1>
+      <h2 id="page_title">A photo diary for running.</h2>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <div class="container-fluid">
+            <ul class="nav nav-tabs">
+              <li><%= link_to "LogIn", new_session_path(resource_name), class: 'font_fix' %></li>
+              <li class="active"><%= link_to "SignUp", new_registration_path(resource_name), class: 'font_fix' %></li>
+            </ul>
             <br>
-            <br>
-            <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4">
-                    <%= devise_error_messages! %>
-                    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-                    <%= f.error_notification %>
-
-                    <div class="form-inputs">
-                        <%= f.input :email, required: true, autofocus: true %>
-                        <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
-                        <%= f.input :password_confirmation, required: true %>
-                    </div>
-
-                    <div class="form-actions">
-                        <%= f.button :submit, "Sign up" %>
-                    </div>
-                    <% end %>
-                    <br>
-                    <%= render "devise/shared/links" %>
+            <%= devise_error_messages! %>
+            <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                <%= f.error_notification %>
+                <div class="form-inputs">
+                  <%= f.input :email, required: true, autofocus: true %>
+                  <%= f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length) %>
+                  <%= f.input :password_confirmation, required: true %>
                 </div>
-                <div class="col-md-4"></div>
-            </div>
+                <div class="form-actions">
+                  <%= f.button :submit, "Sign up", class: 'btn btn-color3' %>
+                  <br>
+                  <br>
+                </div>
+            <% end %>
+          </div>
         </div>
+        <div class="col-md-4"></div>
+      </div>
     </div>
+  </div>
+  </div>
 </header>

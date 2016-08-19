@@ -11,8 +11,8 @@
         <div class="col-md-4">
           <div class="container-fluid">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#">LogIn</a></li>
-              <li><%= link_to "SignUp", new_registration_path(resource_name), class: 'font_fix' %></li>
+              <li style="width:50%" class="active"><a href="#">LogIn</a></li>
+              <li style="width:50%"><%= link_to "SignUp", new_registration_path(resource_name), class: 'font_fix' %></li>
             </ul>
             <br>
             <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
